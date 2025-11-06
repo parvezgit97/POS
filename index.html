@@ -1293,7 +1293,7 @@
                 </button>
                 <div class="cashier-info">
                     <span>Cashier: </span>
-                    <span contenteditable="true" id="cashierName">John Doe</span>
+                    <span contenteditable="true" id="cashierName">Parvez</span>
                 </div>
             </div>
         </header>
@@ -1583,7 +1583,7 @@
             <p id="receiptStorePhone">01346-878776</p>
             <p>Invoice: <span id="receiptInvoiceNumber">INV-001</span><span class="returned-badge hidden" id="returnedBadge">(Returned)</span></p>
             <p>Date: <span id="receiptDate">2023-11-15 14:30</span></p>
-            <p>Cashier: <span id="receiptCashier">John Doe</span></p>
+            <p>Cashier: <span id="receiptCashier">Parvez</span></p>
             <p>Customer: <span id="receiptCustomer">-</span></p>
         </div>
         <table class="receipt-items">
@@ -2113,7 +2113,7 @@
                 paymentMethod: state.paymentMethod,
                 cashier: elements.cashierName.textContent,
                 customerPhone: state.customerPhone,
-                returned: true
+                returned: false
             };
             
             state.sales.push(sale);
