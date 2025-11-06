@@ -1278,7 +1278,7 @@
                 <div class="store-logo">Gadget Bro</div>
                 <div class="store-details">
                     <h1 contenteditable="true" id="storeNameHeader">Gadget Bro Electronics</h1>
-                    <p contenteditable="true" id="storeAddressHeader">DAG# 138, kalachadpur, Gulshan, Dhaka | +880 1346-878776</p>
+                    <p contenteditable="true" id="storeAddressHeader">123 Tech Street, Dhaka | 017XX-XXXXXX</p>
                 </div>
             </div>
             <div class="header-controls">
@@ -1293,7 +1293,7 @@
                 </button>
                 <div class="cashier-info">
                     <span>Cashier: </span>
-                    <span contenteditable="true" id="cashierName">Parvez</span>
+                    <span contenteditable="true" id="cashierName">John Doe</span>
                 </div>
             </div>
         </header>
@@ -1535,11 +1535,11 @@
             </div>
             <div class="form-group">
                 <label class="form-label">Store Address</label>
-                <input type="text" class="form-input" id="storeAddress" value="DAG# 138, kalachadpur, Gulshan, Dhaka">
+                <input type="text" class="form-input" id="storeAddress" value="123 Tech Street, Dhaka">
             </div>
             <div class="form-group">
                 <label class="form-label">Store Phone</label>
-                <input type="text" class="form-input" id="storePhone" value="+880 1346-878776">
+                <input type="text" class="form-input" id="storePhone" value="017XX-XXXXXX">
             </div>
             <div class="form-group">
                 <label class="form-label">Tax Rate (%)</label>
@@ -1579,11 +1579,11 @@
     <div class="receipt hidden" id="receiptTemplate">
         <div class="receipt-header">
             <h2 id="receiptStoreName">Gadget Bro Electronics</h2>
-            <p id="receiptStoreAddress">DAG# 138, kalachadpur, Gulshan, Dhaka</p>
-            <p id="receiptStorePhone">+880 1346-878776</p>
+            <p id="receiptStoreAddress">123 Tech Street, Dhaka</p>
+            <p id="receiptStorePhone">017XX-XXXXXX</p>
             <p>Invoice: <span id="receiptInvoiceNumber">INV-001</span><span class="returned-badge hidden" id="returnedBadge">(Returned)</span></p>
             <p>Date: <span id="receiptDate">2023-11-15 14:30</span></p>
-            <p>Cashier: <span id="receiptCashier">Parvez</span></p>
+            <p>Cashier: <span id="receiptCashier">John Doe</span></p>
             <p>Customer: <span id="receiptCustomer">-</span></p>
         </div>
         <table class="receipt-items">
@@ -1622,7 +1622,7 @@
             </tr>
         </table>
         <div class="text-center mt-2">
-            <p>Thank you for shopping with us!</p>
+            <p>Thank you for your business!</p>
             <p>** This is a computer-generated receipt **</p>
         </div>
     </div>
@@ -1632,8 +1632,8 @@
         const CONFIG = {
             store: {
                 name: "Gadget Bro Electronics",
-                address: "DAG# 138, kalachadpur, Gulshan, Dhaka",
-                phone: "+880 1346-878776",
+                address: "123 Tech Street, Dhaka",
+                phone: "017XX-XXXXXX",
                 taxRate: 7.5
             },
             products: [] // Start with empty products
@@ -2113,7 +2113,7 @@
                 paymentMethod: state.paymentMethod,
                 cashier: elements.cashierName.textContent,
                 customerPhone: state.customerPhone,
-                : false
+                returned: false
             };
             
             state.sales.push(sale);
